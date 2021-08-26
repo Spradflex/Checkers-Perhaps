@@ -1,0 +1,92 @@
+* { /*Universal selector of all elements*/
+    margin: auto;
+}
+
+main {
+    display: flex; /*https://css-tricks.com/snippets/css/a-guide-to-flexbox/  Tutorial on using flex. Flex aligns and distributes space among items in a container*/
+    flex-direction: column; /*this establishes the main axis, defines direction*/
+    justify-content: space-between; /*defines the alignment along main axis; flow control of set flex*/
+    align-items: center; /*defines the default behaviour of how flex items are laid out*/
+    height: 100vh; /*Relative to 1% height of viewport (recomended use for possible different mediums)*/
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    margin: 0;
+    width: 100%;
+}
+
+.nPH {
+    background-color: burlywood;
+}
+
+td {
+    text-align: center;
+    background-color: coral;
+    width: 65px;
+    height: 65px;
+}
+
+.red-turn-text {
+    text-align: center;
+    color: black;
+    font-family: DotGothic16; 
+    font-size: 55px;
+}
+
+.black-turn-text {
+    text-align: center;
+    font-family: DotGothic16;
+    font-size: 55px;
+    color: blueviolet;
+}
+
+.blackP {
+    width: 20px;
+    height: 20px;   
+    padding: 12px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.redP {
+    width: 20px;
+    height: 20px;
+    padding: 12px;
+    background-color: crimson;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.king.redP {
+    background-color: orange;
+}
+
+.king.blackP {
+    background-color: purple;
+}
+
+P {
+    display: inline-block;
+}
+
+#divider {
+    font-size: 90px;
+    margin-left: 15px;
+    margin-left: 15px;
+}
+
+span {
+    display: inline-block;
+}
+

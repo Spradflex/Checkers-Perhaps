@@ -1,0 +1,113 @@
+<!DOCTYPE html><!--Oh boy here I go learning again-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"><!--sets Unicode Transformation Format-8bit|| most all characters useable-->
+        <meta name="viewport" content="widthdevice-width, intitial-scale=1.0"> <!--meta tag to control layout for mobile browswers-->
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16" rel="stylesheet"> <!--font import from google||REMEMBER FREE STUFF-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css"/><!--tag = relationship between the current document and an external resource|| used to link to external stylesheet-->
+        <script defer src="core.js"></script><!--imbeds targeted script into webpage-->
+        <title>CHECKERS</title>
+    </head>
+    <body>
+        <main><!--The main element of webpage||Directly relates to central topic of document-->
+            <div class="red-turn-text mobile"><!--Show text Mobile-->
+                Reds Turn!
+            </div>
+            <table>
+                <tr>
+                    <td class="nPH"></td><!--No Piece Here-->
+                    <td><p class="redP" id="0"></p></td><!--using p for red / span for black||easier JS iteration||Suggestion from online sources||ID for pieces-->
+                    <td class="nPH"></td>
+                    <td><p class="redP" id="1"></p></td>
+                    <td class="nPH"></td>
+                    <td><p class="redP" id="2"></p></td>
+                    <td class="nPH"></td>
+                    <td><p class="redP" id="3"></p></td>
+                </tr>
+                <tr>
+                    <td><p class="redP" id="4"></p></td>
+                    <td class="nPH"></td>
+                    <td><p class="redP" id="5"></p></td>
+                    <td class="nPH"></td>
+                    <td><p class="redP" id="6"></p></td>
+                    <td class="nPH"></td>
+                    <td><p class="redP" id="7"></p></td>
+                    <td class="nPH"></td>
+                </tr>
+                <tr>
+                    <td class="nPH"></td>
+                    <td><p class="redP" id="8"></p></td>
+                    <td class="nPH"></td>
+                    <td><p class="redP" id="9"></p></td>
+                    <td class="nPH"></td>
+                    <td><p class="redP" id="10"></p></td>
+                    <td class="nPH"></td>
+                    <td><p class="redP" id="11"></p></td><!--12 pieces per player-->
+                </tr>
+                <tr>
+                    <td></td><!--This denotes piece access||moveable space-->
+                    <td class="nPH"></td><!--Checkers rule||onlyCertainSpacesPlayable-->
+                    <td></td>
+                    <td class="nPH"></td>
+                    <td></td>
+                    <td class="nPH"></td>
+                    <td></td>
+                    <td class="nPH"></td>
+                </tr>
+                <tr>
+                    <td class="nPH"></td><!--this little dude nPH was off causing double red-->
+                    <td></td>
+                    <td class="nPH"></td>
+                    <td></td>
+                    <td class="nPH"></td>
+                    <td></td>
+                    <td class="nPH"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><span class="blackP" id="12"></span></td><!--black piece-->
+                    <td class="nPH"></td>
+                    <td><span class="blackP" id="13"></span></td>
+                    <td class="nPH"></td>
+                    <td><span class="blackP" id="14"></span></td>
+                    <td class="nPH"></td>
+                    <td><span class="blackP" id="15"></span></td>
+                    <td class="nPH"></td>
+                </tr>
+                <tr>
+                    <td class="nPH"></td>
+                    <td><span class="blackP" id="16"></span></td>
+                    <td class="nPH"></td>
+                    <td><span class="blackP" id="17"></span></td>
+                    <td class="nPH"></td>
+                    <td><span class="blackP" id="18"></span></td>
+                    <td class="nPH"></td>
+                    <td><span class="blackP" id="19"></span></td>
+                </tr>
+                <tr>
+                    <td><span class="blackP" id="20"></span></td>
+                    <td class="nPH"></td>
+                    <td><span class="blackP" id="21"></span></td>
+                    <td class="nPH"></td>
+                    <td><span class="blackP" id="22"></span></td>
+                    <td class="nPH"></td>
+                    <td><span class="blackP" id="23"></span></td>
+                    <td class="nPH"></td>
+                </tr>
+            </table>
+            <div class="desktop">
+                <div class="red-turn-text">
+                Reds Turn!
+            </div>
+            <p id="divider">||</p>
+            <div class="black-turn-text">
+                Blacks Turn!
+            </div>
+        </div>
+        <div class="black-turn-text mobile">
+            Blacks Turn!
+        </div>
+        </main>
+    </body>
+</html>
